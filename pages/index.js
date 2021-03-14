@@ -4,12 +4,13 @@ import Link from 'next/link'
 
 const Index = () => (
   <Layout>
+
     <header className='row'>
       <div className='col-md-12'>
         <div className='card card-body bg-secondary text-light'>
           <div className='row'>
             <div className='col-md-4'>
-              <img src='ivan1.jpg' alt='' className='img-fluid' />
+              <img src='foto1.jpg' alt='' className='img-fluid' />
             </div>
             <div className='col-md-8'>
               <h1>Iván Ugarte</h1>
@@ -81,7 +82,7 @@ const Index = () => (
               <div className='col-md-4 p-2' key={i}>
                 <div className='card' h-100>
                   <div className='overflow'>
-                    <img src={`/${image}`} alt='' className="card-img-top" />
+                    <img src={`/${image}`} alt='' className='card-img-top' />
                   </div>
                   <div className='card-body'>
                     <h3>{name}</h3>
@@ -92,9 +93,18 @@ const Index = () => (
               </div>
             ))}
           </div>
+          <div className='text-center  mt-4'>
+            <Link href='/portfolio'>
+              <a className='btn btn-outline-light'>Más Proyectos</a>
+            </Link>
+          </div>
+          <div className='text-center bg-dark text-light mt-4'>
+              <p className='footer'>Hecho por Iván Ugarte</p>
+          </div>
         </div>
       </div>
     </div>
+    
   </Layout>
 )
 

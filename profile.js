@@ -1,32 +1,41 @@
 export const skills = [
   {
-    skill: 'Javascript',
+    skill: 'Cobol',
     percentage: 100
   },
   {
-    skill: 'Node js',
-    percentage: 50
-  },
-  {
-    skill: 'React js',
-    percentage: 70
-  },
-  {
-    skill: 'Next JS',
-    percentage: 70
-  },
-  {
-    skill: 'Html',
+    skill: 'Cics',
     percentage: 80
+  },
+  {
+    skill: 'SQL',
+    percentage: 80
+  },
+  {
+    skill: 'Vsam',
+    percentage: 100
+  },
+  {
+    skill: 'Javascript',
+    percentage: 60
   },
   {
     skill: 'Css',
-    percentage: 80
+    percentage: 50
   },
   {
-    skill: 'Cobol Main Frame',
-    percentage: 90
+    skill: 'Html',
+    percentage: 50
+  },
+  {
+    skill: 'React Js',
+    percentage: 50
+  },
+  {
+    skill: 'Next Js',
+    percentage: 50
   }
+
 ]
 
 export const experiences = [
@@ -65,25 +74,25 @@ export const projects = [
     name: 'Proyecto bug de Milenio',
     description:
       'Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real',
-      image: 'portfolio1.jpeg', 
+      image: 'cobol.jpg', 
   },
   {
     name: 'Proyecto bug de Milenio',
     description:
       'Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real',
-      image: 'portfolio2.jpg', 
+      image: 'sql.jpg', 
   },
   {
     name: 'Proyecto bug de Milenio',
     description:
       'Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real',
-      image: 'portfolio3.png', 
+      image: 'cics.jpg', 
   },
   {
     name: 'Proyecto bug de Milenio',
     description:
       'Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real',
-      image: 'portfolio4.png', 
+      image: 'vsam.jpg', 
   },
   {
     name: 'Proyecto bug de Milenio',
