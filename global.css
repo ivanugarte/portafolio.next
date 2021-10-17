@@ -1,3 +1,8 @@
+/* ./styles/globals.css */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 .overflow {
   height: 50%;
   overflow: hidden;
@@ -11,3 +16,15 @@
 .overflow .card-img-top:hover {
   transform: scale(1.8);
 }
+
+/* Small (sm) */
+@media (min-width: 640px) { /* ... */ }
+
+/* Medium (md) */
+@media (min-width: 768px) { /* ... */ }
+
+/* Large (lg) */
+@media (min-width: 1024px) { /* ... */ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) { /* ... */ }

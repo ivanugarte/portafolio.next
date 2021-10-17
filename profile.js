@@ -5,11 +5,11 @@ export const skills = [
   },
   {
     skill: 'Cics',
-    percentage: 80
+    percentage: 100
   },
   {
     skill: 'SQL',
-    percentage: 80
+    percentage: 100
   },
   {
     skill: 'Vsam',
@@ -17,23 +17,23 @@ export const skills = [
   },
   {
     skill: 'Javascript',
-    percentage: 60
+    percentage: 80
   },
   {
     skill: 'Css',
-    percentage: 50
+    percentage: 80
   },
   {
     skill: 'Html',
-    percentage: 50
+    percentage: 80
   },
   {
     skill: 'React Js',
-    percentage: 50
+    percentage: 80
   },
   {
     skill: 'Next Js',
-    percentage: 50
+    percentage: 90
   }
 
 ]

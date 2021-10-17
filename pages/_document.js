@@ -9,8 +9,8 @@ class MyDocument extends Document {
   render () {
     return (
       <Html>
-        <Head>
           <title> Mi Portafolio </title>
+        <Head>
           <meta name="Descripcion" content="Ivan Ugarte Portfolio website"/>
         </Head>
         <body>
