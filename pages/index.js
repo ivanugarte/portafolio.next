@@ -14,10 +14,12 @@ const Index = () => (
             </div>
             <div className='col-md-8'>
               <h1>Iván Ugarte</h1>
+              <br />
               <h3>Analista de Sistemas</h3>
+              <br />
               <p>
-                Analista de Sistemas Titulado en proceso de datos, experiencia
-                de 15 años en Main Frame con Herramientas Cobol - Cics, db2,
+                Titulado en proceso de datos, experiencia
+                de 15 años en mainFrame con Herramientas Cobol - Cics, db2,
                 Vsam. Programador Junior en Javascript - React, Next, Node. Html
                 , Css.
               </p>
