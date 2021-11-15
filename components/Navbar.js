@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 const Navbar = () => (
-  <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+  <nav className='navbar navbar-expand-lg bg-gray-200 text-gray-900 italic'>
     <div className='container'>
       <Link href='/'>
-        <a className='nav-link'>PORTAFOLIO IVAN UGARTE</a>
+        <a className='nav-link text-gray-900'><strong>PORTAFOLIO IVAN UGARTE</strong></a>
       </Link>
       <button
-        className='navbar-toggler'
+        className='navbar-toggler collapsed'
         type='button'
         data-toggle='collapse'
         data-target='#navbarNav'
