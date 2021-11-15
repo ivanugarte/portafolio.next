@@ -37,7 +37,7 @@ const Index = () => (
       </div>
     </header>
 
-    <div className="row py-2 ">
+    <div className="row py-2 italic">
       <div className="col-md-4">
         <div className="card  bg-light">
           <div className="card-body bg-gray-300">
@@ -50,7 +50,7 @@ const Index = () => (
               </h1>{" "}
             </center>
             {skills.map(({ skill, percentage }, i) => (
-              <div className="py-3 " key={i}>
+              <div className="py-3" key={i}>
                 <h5>{skill}</h5>
                 <div className="progress">
                   <div
@@ -111,7 +111,7 @@ const Index = () => (
             </div>
             {projects.map(({ name, description, image }, i) => (
               <div className="col-md-4 p-2" key={i}>
-                <div className="card" h-100>
+                <div className="card h-100" >
                   <div className="overflow">
                     <img src={`/${image}`} alt="" className="card-img-top" />
                   </div>

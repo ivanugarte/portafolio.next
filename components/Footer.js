@@ -153,7 +153,7 @@ function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">With ❤️ by <a className="text-blue-600 hover:underline" href="https://bluechips.finance/">bluechips.finance</a>. All rights reserved.</div>
+          <div className="text-sm text-gray-600 mr-4">Iván Ugarte <a className="text-blue-600 hover:underline" href="/">Link si necesario</a>. All rights reserved.</div>
 
         </div>
 
