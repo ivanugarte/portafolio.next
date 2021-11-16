@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
 
@@ -25,7 +24,7 @@ const Index = () => (
                   Html , Css, bootstrap, tailwind
                 </p>
                 <br />
-                <Link href="/experiences">
+                <Link href="/experience">
                   <a className="btn btn-light bg-blue-500 bg-opacity-50">
                     <strong>Saber más</strong>
                   </a>
@@ -137,7 +136,6 @@ const Index = () => (
         </div>
       </div>
     </div>
-    <Footer />
   </Layout>
 );
 

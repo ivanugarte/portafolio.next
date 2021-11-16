@@ -1,65 +1,128 @@
-import React from "react";
+import { useState } from "react";
+import { Tab } from "@headlessui/react";
+import Layout from "../components/Layout";
 
-export default function Navbar({ fixed }) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+export default function Example() {
+  let [categories] = useState({
+    Reciente: [
+      {
+        id: 1,
+        title:
+          "En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá. En los útimos dos meses he trabajado mucho con NextJs, me há servido para aprender más y los bebeficios que nos dá.  ",
+        date: "15h nov",
+        commentCount: 5,
+        shareCount: 2,
+      },
+      {
+        id: 2,
+        title: "So you've bought coffee... now what?",
+        date: "2h ago",
+        commentCount: 3,
+        shareCount: 2,
+      },
+    ],
+    Popular: [
+      {
+        id: 1,
+        title: "Is tech making coffee better or worse?",
+        date: "Jan 7",
+        commentCount: 29,
+        shareCount: 16,
+      },
+      {
+        id: 2,
+        title: "The most innovative things happening in coffee",
+        date: "Mar 19",
+        commentCount: 24,
+        shareCount: 12,
+      },
+    ],
+    Trending: [
+      {
+        id: 1,
+        title: "Ask Me Anything: 10 answers to your questions about coffee",
+        date: "2d ago",
+        commentCount: 9,
+        shareCount: 5,
+      },
+      {
+        id: 2,
+        title: "The worst advice we've ever heard about coffee",
+        date: "4d ago",
+        commentCount: 1,
+        shareCount: 2,
+      },
+    ],
+  });
+
   return (
-    <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-500 mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="#pablo"
-            >
-              IVAN ANDRES UGARTE MELLA
-            </a>
-            <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-            id="example-navbar-danger"
-          >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Share</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Tweet</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Pin</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
+    <Layout>
+      <div className="w-full max-w-md px-2 py-6 sm:px-0">
+        <Tab.Group>
+          <Tab.List className="flex p-1 space-x-1 bg-blue-900/20 rounded-xl">
+            {Object.keys(categories).map((category) => (
+              <Tab
+                key={category}
+                className={({ selected }) =>
+                  classNames(
+                    "w-full py-2.5 text-sm leading-5 font-medium text-blue-700 rounded-lg",
+                    "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60",
+                    selected
+                      ? "bg-white shadow"
+                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                  )
+                }
+              >
+                {category}
+              </Tab>
+            ))}
+          </Tab.List>
+          <Tab.Panels className="mt-2">
+            {Object.values(categories).map((posts, idx) => (
+              <Tab.Panel
+                key={idx}
+                className={classNames(
+                  "bg-white rounded-xl p-3",
+                  "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60"
+                )}
+              >
+                <ul>
+                  {posts.map((post) => (
+                    <li
+                      key={post.id}
+                      className="relative p-3 rounded-md hover:bg-coolGray-100"
+                    >
+                      <h3 className="text-sm font-medium leading-5">
+                        {post.title}
+                      </h3>
+
+                      <ul className="flex mt-1 space-x-1 text-xs font-normal leading-4 text-coolGray-500">
+                        <li>{post.date}</li>
+                        <li>&middot;</li>
+                        <li>{post.commentCount} comments</li>
+                        <li>&middot;</li>
+                        <li>{post.shareCount} shares</li>
+                      </ul>
+
+                      <a
+                        href="#"
+                        className={classNames(
+                          "absolute inset-0 rounded-md",
+                          "focus:z-10 focus:outline-none focus:ring-2 ring-blue-400"
+                        )}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </Tab.Panel>
+            ))}
+          </Tab.Panels>
+        </Tab.Group>
+      </div>
+    </Layout>
   );
 }
