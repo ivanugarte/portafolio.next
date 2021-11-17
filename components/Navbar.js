@@ -26,16 +26,13 @@ export default function HeaderTest() {
                   </Disclosure.Button>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="logo-full.png"
-                    alt="Workflow"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="logo-full.png"
-                    alt="Workflow"
-                  />
+                  <Link href="/">
+                    <img
+                      className="hidden lg:block h-8 w-auto"
+                      src="fotoNavbar.jpg"
+                      alt="Workflow"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8 pl-72 text-right">
                   <Link href="/blog">

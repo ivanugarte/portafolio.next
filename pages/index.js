@@ -13,9 +13,9 @@ const Index = () => (
             </div>
             <div className="col-md-8 italic text-gray-900">
               <strong>
-                <h1>Iván Ugarte</h1>
+                <h1>Iván Andrés Ugarte Mella</h1>
                 <br />
-                <h3>Analista de Sistemas</h3>
+                <h3>Analista de Sistemas / Programador</h3>
                 <br />
                 <p>
                   Titulado en Procesamiento de Datos, experiencia de 15 años en
@@ -24,7 +24,7 @@ const Index = () => (
                   Html , Css, bootstrap, tailwind
                 </p>
                 <br />
-                <Link href="/experience">
+                <Link href="#">
                   <a className="btn btn-light bg-blue-500 bg-opacity-50">
                     <strong>Saber más</strong>
                   </a>
@@ -37,7 +37,7 @@ const Index = () => (
     </header>
 
     <div className="row py-2 italic">
-      <div className="col-md-4">
+      <div className="col-md-4 container">
         <div className="card  bg-light">
           <div className="card-body bg-gray-300">
             <center>
@@ -63,12 +63,12 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <div className="col-md-8">
+      <div className="col-md-8 container">
         <div className="card bg-light">
           <div className="card-body bg-gray-300 italic">
             <h1>
               <strong>Experiencia Profesional</strong>
-            </h1>{" "}
+            </h1>
             <br />
             <ul>
               {experiences.map(({ title, description, from, to }, i) => (
@@ -85,9 +85,9 @@ const Index = () => (
               ))}
             </ul>
             <br />
-            <Link href="/experiences">
+            <Link href="/experience">
               <a className="btn btn-light bg-blue-500 bg-opacity-50">
-                <strong>Ver más experiencia</strong>
+                <strong>Ver Experiencia Detallada</strong>
               </a>
             </Link>
             {/* CAMBIAR ESTOS BR DE ABAJO  */}
