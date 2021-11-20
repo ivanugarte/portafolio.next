@@ -216,10 +216,6 @@ function Footer() {
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
             Iván Ugarte
-            <a className="text-blue-600 hover:underline" href="/">
-              Link si necesario
-            </a>
-            . All rights reserved.
           </div>
           
         </div>

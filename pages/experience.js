@@ -9,13 +9,13 @@ export default function Example() {
         <div className="max-w-md p-2 mx-auto bg-white rounded-2xl">
           <div className="col-md-8 italic text-gray-900 mb-3">
             <strong>
-              <h1 className="text-xl">EXPERIENCIA DETALLADA</h1> <br/>
+              <h1 className="text-xl">EXPERIENCIA DETALLADA</h1> <br />
             </strong>
             <Disclosure>
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex justify-between w-96 px-4 py-2 text-sm font-medium text-left text-purple-900 bg-purple-100 rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                    <span>Experiencia con Cobol</span>
+                    <span>Sul America ING 1999-2001</span>
                     <ChevronUpIcon
                       className={`${
                         open ? "transform rotate-180" : ""

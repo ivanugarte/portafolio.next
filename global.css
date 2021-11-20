@@ -3,6 +3,19 @@
 @tailwind components;
 @tailwind utilities; */
 
+/* whatsapp */
+#whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  z-index: 999 
+}
+
 .overflow {
   height: 50%;
   overflow: hidden;
