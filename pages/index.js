@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
 
+
 const Index = () => (
   <div className="bg-gray-900">
     <Layout>
@@ -92,7 +93,7 @@ const Index = () => (
                         {from}-{to}
                       </h5>
                       <p>{description}</p>
-                      <br />
+                      <br/>
                     </li>
                   </div>
                 ))}
@@ -130,9 +131,9 @@ const Index = () => (
                     <div className="card-body text-gray-400  bg-gray-800">
                       <h3>{name}</h3>
                       <p>{description}</p>
-                      <a className="text-blue-500" href="#!">
+                      {/* <a className="text-blue-500" href="#!">
                         Ver Más
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
