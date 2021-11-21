@@ -5,13 +5,16 @@ import Link from "next/link";
 const Index = () => (
   <div className="bg-gray-900">
     <Layout>
-    <div id="whatsapp">
-    <div class="btn-whatsapp">
-      <a href="https://api.whatsapp.com/send?phone=5636682021" target="_blank">
-        <img src="btn_whatsapp.png" alt="..." width="70px" height="70px" />
-      </a>
-    </div>
-  </div>
+      <div id="whatsapp">
+        <div className="btn-whatsapp">
+          <a
+            href="https://api.whatsapp.com/send?phone=5636682021"
+            target="_blank"
+          >
+            <img src="btn_whatsapp.png" alt="..." width="70px" height="70px" />
+          </a>
+        </div>
+      </div>
       <header className="row">
         <div className="col-md-12">
           <div className="card card-body bg-gray-800">
@@ -33,7 +36,7 @@ const Index = () => (
                   </p>
                   <br />
                   <Link href="/#">
-                    <button class="bg-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-full">
+                    <button className="bg-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-full">
                       Ver Completo
                     </button>
                   </Link>
@@ -56,7 +59,9 @@ const Index = () => (
               </center>
               {skills.map(({ skill, percentage }, i) => (
                 <div className="py-3" key={i}>
-                  <strong><h5>{skill}</h5></strong>
+                  <strong>
+                    <h5>{skill}</h5>
+                  </strong>
                   <div className="progress">
                     <div
                       className="progress-bar"
@@ -78,23 +83,25 @@ const Index = () => (
               <br />
               <ul>
                 {experiences.map(({ title, description, from, to }, i) => (
-                  <li Key={i}>
-                    <h3>
-                      <strong>{title}</strong>
-                    </h3>
-                    <h5>
-                      {from}-{to}
-                    </h5>
-                    <p>{description}</p>
-                    <br />
-                  </li>
+                  <div key={i}>
+                    <li>
+                      <h3>
+                        <strong>{title}</strong>
+                      </h3>
+                      <h5>
+                        {from}-{to}
+                      </h5>
+                      <p>{description}</p>
+                      <br />
+                    </li>
+                  </div>
                 ))}
               </ul>
               <br />
               <br />
               <Link href="/#">
-                <button class="bg-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-full">
-                  Ver experiencia completa 
+                <button className="bg-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-full">
+                  Ver experiencia completa
                 </button>
               </Link>
               {/* CAMBIAR ESTOS BR DE ABAJO  */}
@@ -120,7 +127,7 @@ const Index = () => (
                     <div className="overflow">
                       <img src={`/${image}`} alt="" className="card-img-top" />
                     </div>
-                    <div className="card-body text-gray-400  bg-gray-800" >
+                    <div className="card-body text-gray-400  bg-gray-800">
                       <h3>{name}</h3>
                       <p>{description}</p>
                       <a className="text-blue-500" href="#!">
