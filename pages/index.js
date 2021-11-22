@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
 
-
 const Index = () => (
   <div className="bg-gray-900">
     <Layout>
@@ -23,35 +22,34 @@ const Index = () => (
               <div className="col-md-4">
                 <img src="foto1.jpg" alt="" className="img-fluid" />
               </div>
-              <div className="col-md-8 italic text-gray-400">
-                <strong>
-                  <h1>Iván Andrés Ugarte Mella</h1>
-                  <br />
-                  <h3>Analista de Sistemas / Programador</h3>
-                  <br />
-                  <p>
-                    Titulado en Procesamiento de Datos, experiencia de 15 años
-                    en MainFrame con Herramientas Cobol, Cics, db2, Vsam.
-                    Experiencia de 2 años en Programador en Javascript (React,
-                    Next, Node) Html , Css, bootstrap, tailwind
-                  </p>
-                  <br />
-                  <Link href="/#">
-                    <button className="bg-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-full">
-                      Ver Completo
-                    </button>
-                  </Link>
-                </strong>
+              <div className="col-md-8 font-sans text-gray-50">
+                <h1 className="text-2xl">Iván Andrés Ugarte Mella</h1>
+                <h1 className="font-medium ">
+                  Analista de Sistemas - Programador
+                </h1>
+                <br />
+                <p>
+                  Titulado en Procesamiento de Datos, experiencia de 15 años en
+                  MainFrame con Herramientas Cobol, Cics, db2, Vsam. Experiencia
+                  de 2 años en Programador en Javascript (React, Next, Node)
+                  Html , Css, bootstrap, tailwind.
+                </p>
+                <br />
+                <Link href="/#">
+                  <button className="bg-gray-600 hover:bg-gray-700 text-gray-50 font-bold py-2 px-4 rounded-full">
+                    Ver Más
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <div className="row py-4 italic">
-      {/* <div className="flex flex-row py-4 "> */}
+      <div className="row py-4 font-sans ">
+        {/* <div className="flex flex-row py-4 "> */}
         <div className="col-md-4">
-          <div className="card text-gray-400 bg-gray-800">
+          <div className="card text-gray-50 bg-gray-800">
             <div className="card-body">
               <center>
                 <h1>
@@ -76,12 +74,10 @@ const Index = () => (
             </div>
           </div>
         </div>
-        <div className="col-md-8 flex-grow">
-          <div className="card text-gray-400  bg-gray-800 h-full">
-            <div className="card-body italic">
-              <h1>
-                <strong>Experiencia Profesional</strong>
-              </h1>
+        <div className="col-md-8 flex flex-grow">
+          <div className="card   bg-gray-800">
+            <div className="card-body font-sans text-gray-50">
+              <h1>Experiencia Profesional</h1>
               <br />
               <ul>
                 {experiences.map(({ title, description, from, to }, i) => (
@@ -94,13 +90,13 @@ const Index = () => (
                         {from}-{to}
                       </h5>
                       <p>{description}</p>
-                      <br/>
+                      <br />
                     </li>
                   </div>
                 ))}
               </ul>
-              <Link href="/#">
-                <button className="bg-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-full">
+              <Link href="/experiencia">
+                <button className="bg-gray-600 hover:bg-gray-700 text-gray-50 font-bold py-2 px-4 rounded-full">
                   Ver experiencia completa
                 </button>
               </Link>
@@ -111,7 +107,7 @@ const Index = () => (
 
       <div className="row ">
         <div className="col-md-12 flex">
-          <div className="card card-body text-gray-400  bg-gray-800 italic">
+          <div className="card card-body text-gray-50  bg-gray-800 font-sans ">
             <div className="row">
               <div className="col-md-12">
                 <h4 className="text-center text-blue-500 mb-3 text-xl">
@@ -124,7 +120,7 @@ const Index = () => (
                     <div className="overflow">
                       <img src={`/${image}`} alt="" className="card-img-top" />
                     </div>
-                    <div className="card-body text-gray-400  bg-gray-800">
+                    <div className="card-body text-gray-50  bg-gray-800">
                       <h3>{name}</h3>
                       <p>{description}</p>
                       {/* <a className="text-blue-500" href="#!">
