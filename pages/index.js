@@ -18,7 +18,7 @@ const Index = () => (
       </div>
       <header className="row">
         <div className="col-md-12">
-          <div className="card card-body bg-gray-800">
+          <div className="card card-body bg-gray-800 ">
             <div className="row">
               <div className="col-md-4">
                 <img src="foto1.jpg" alt="" className="img-fluid" />
@@ -48,9 +48,10 @@ const Index = () => (
         </div>
       </header>
 
-      <div className="row py-2 italic">
-        <div className="col-md-4 container">
-          <div className="card text-gray-400  bg-gray-800">
+      <div className="row py-4 italic">
+      {/* <div className="flex flex-row py-4 "> */}
+        <div className="col-md-4">
+          <div className="card text-gray-400 bg-gray-800">
             <div className="card-body">
               <center>
                 <h1>
@@ -75,8 +76,8 @@ const Index = () => (
             </div>
           </div>
         </div>
-        <div className="col-md-8 container">
-          <div className="card text-gray-400  bg-gray-800">
+        <div className="col-md-8 flex-grow">
+          <div className="card text-gray-400  bg-gray-800 h-full">
             <div className="card-body italic">
               <h1>
                 <strong>Experiencia Profesional</strong>
@@ -98,23 +99,18 @@ const Index = () => (
                   </div>
                 ))}
               </ul>
-              <br />
-              <br />
               <Link href="/#">
                 <button className="bg-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-full">
                   Ver experiencia completa
                 </button>
               </Link>
-              {/* CAMBIAR ESTOS BR DE ABAJO  */}
-              <br />
-              <br />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-md-12">
+      <div className="row ">
+        <div className="col-md-12 flex">
           <div className="card card-body text-gray-400  bg-gray-800 italic">
             <div className="row">
               <div className="col-md-12">
