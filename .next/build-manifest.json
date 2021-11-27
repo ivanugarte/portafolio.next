@@ -34,16 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/curriculo.js"
     ],
-    "/experiencia": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/experiencia.js"
-    ],
-    "/habilidades": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/habilidades.js"
-    ],
     "/proyectos": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
