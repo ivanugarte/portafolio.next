@@ -8,7 +8,7 @@ const Index = () => (
  
       <header className="row">
         <div className="col-md-12">
-          <div className="card card-body bg-gray-800 ">
+          <div className="card card-body bg-gray-800">
             <div className="row">
               <div className="col-md-4">
                 <img src="foto1.jpg" alt="" className="img-fluid" />

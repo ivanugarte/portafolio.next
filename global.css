@@ -32,11 +32,7 @@
 
 /* Small (sm)   a partir de 640px se aplica los que está en la media */
 @media (max-width: 640px) {
-  .progressbarSize {
-    padding-left: 1px;
-    padding-right: 1px;
-    background-color: red;  
-  }
+  
 }
 
 /* Medium (md) */
@@ -47,9 +43,17 @@
 /* Large (lg) */
 @media (min-width: 1024px) {
   /* ... */
+  .progressbarSize {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
   /* ... */
+  .progressbarSize {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    }
 }

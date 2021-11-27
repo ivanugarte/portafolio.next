@@ -3,13 +3,13 @@ import Layout from "../components/Layout";
 const Habilidades = () => (
   <div className="bg-gray-900">
     <Layout>
-      <div className="progressbarSize px-20">
+      <div className="px-1">
         <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
           Cobol 2 MainFrame
         </div>
         <div className="w-full bg-gray-200 rounded-full h-5 mb-3">
           <div className="bg-gray-600 h-5 rounded-full w-4/4">
-            <h1 className="text-gray-200 text-center">Senior</h1>
+            <h1 className="progressbarSize text-gray-200 text-center ">Senior</h1>
           </div>
         </div>
         {/* iten 2 */}
