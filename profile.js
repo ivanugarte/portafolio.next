@@ -83,7 +83,7 @@ export const experiences = [
     from: "Marzo de 2019",
     to: "Noviembre de 2019",
     description:
-      "teste - id = 1 -- Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
+      "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
   },
   {
     id: 2,

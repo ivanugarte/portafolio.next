@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 function Footer() {
   return (
@@ -25,7 +24,7 @@ function Footer() {
                   Habilidades
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/proyectos">
                 <a className="border-transparent text-gray-100 hover:border-gray-300 hover:text-gray-400 font-medium items-center px-2 pt-1">
                   Proyectos
                 </a>

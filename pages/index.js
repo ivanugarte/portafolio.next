@@ -107,12 +107,12 @@ const Index = () => (
               </div>
               {projects.map(({ name, description, image }, i) => (
                 <div className="col-md-4 p-2" key={i}>
-                  <div className="card h-100">
+                  <div className="card">
                     <div className="overflow">
-                      <img src={`/${image}`} alt="" className="card-img-top" />
+                      {/* <img   src={`/${image}`} alt="" className="card-img-top" /> */}
                     </div>
-                    <div className="card-body text-gray-50  bg-gray-800">
-                      <h3>{name}</h3>
+                    <div className="card-body text-gray-200  bg-gray-800 w-full">
+                      <h3 className="font-medium text-gray-50">{name}</h3>
                       <p>{description}</p>
                     </div>
                   </div>
