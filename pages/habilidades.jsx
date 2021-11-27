@@ -1,10 +1,9 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
 
 const Habilidades = () => (
   <div className="bg-gray-900">
     <Layout>
-      <div className="px-20">
+      <div className="progressbarSize px-20">
         <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
           Cobol 2 MainFrame
         </div>

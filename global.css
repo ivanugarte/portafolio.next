@@ -13,13 +13,13 @@
   bottom: 20px;
   border-radius: 50%;
   line-height: 80px;
-  z-index: 999 
+  z-index: 999;
 }
 
 .overflow {
   height: 50%;
   overflow: hidden;
-} 
+}
 
 .overflow .card-img-top {
   transform: scale(1);
@@ -30,14 +30,26 @@
   transform: scale(1.8);
 }
 
-/* Small (sm) */
-@media (min-width: 640px) { /* ... */ }
+/* Small (sm)   a partir de 640px se aplica los que está en la media */
+@media (max-width: 640px) {
+  .progressbarSize {
+    padding-left: 1px;
+    padding-right: 1px;
+    background-color: red;  
+  }
+}
 
 /* Medium (md) */
-@media (min-width: 768px) { /* ... */ }
+@media (min-width: 768px) {
+  /* ... */
+}
 
 /* Large (lg) */
-@media (min-width: 1024px) { /* ... */ }
+@media (min-width: 1024px) {
+  /* ... */
+}
 
 /* Extra Large (xl) */
-@media (min-width: 1280px) { /* ... */ }
+@media (min-width: 1280px) {
+  /* ... */
+}
