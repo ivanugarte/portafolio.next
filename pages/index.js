@@ -5,16 +5,7 @@ import Link from "next/link";
 const Index = () => (
   <div className="bg-gray-900">
     <Layout>
-      <div id="whatsapp">
-        <div className="btn-whatsapp">
-          <a
-            href="https://api.whatsapp.com/send?phone=5636682021"
-            target="_blank"
-          >
-            <img src="btn_whatsapp.png" alt="..." width="70px" height="70px" />
-          </a>
-        </div>
-      </div>
+ 
       <header className="row">
         <div className="col-md-12">
           <div className="card card-body bg-gray-800 ">
@@ -47,7 +38,6 @@ const Index = () => (
       </header>
 
       <div className="row py-4 font-sans ">
-        {/* <div className="flex flex-row py-4 "> */}
         <div className="col-md-4">
           <div className="card text-gray-50 bg-gray-800">
             <div className="card-body">
@@ -64,8 +54,8 @@ const Index = () => (
                   </strong>
                   <div className="progress">
                     <div
-                      className="progress-bar"
-                      role="progressbar"
+                        className="progress-bar"
+                        role="progressbar"
                       style={{ width: `${percentage}%` }}
                     ></div>
                   </div>
@@ -77,23 +67,24 @@ const Index = () => (
         <div className="col-md-8 flex flex-grow">
           <div className="card   bg-gray-800">
             <div className="card-body font-sans text-gray-50">
-              <h1>Experiencia Profesional</h1>
+              <h1 className="font-medium">Experiencia Laboral</h1>
               <br />
               <ul>
-                {experiences.map(({ title, description, from, to }, i) => (
-                  <div key={i}>
-                    <li>
-                      <h3>
-                        <strong>{title}</strong>
-                      </h3>
-                      <h5>
-                        {from}-{to}
-                      </h5>
-                      <p>{description}</p>
-                      <br />
-                    </li>
-                  </div>
-                ))}
+                {experiences
+                .filter((n) => n.id < 5)
+                .map(
+                  ({ id, company, from, to, description }, i) => (
+                    <div key={i}>
+                      <li>
+                        <h1 className="text-gray-100">
+                          {id} {company} {from} hasta {to}
+                        </h1>
+                        <p className="text-gray-300">{description}</p>
+                        <br />
+                      </li>
+                    </div>
+                  )
+                )}
               </ul>
               <Link href="/experiencia">
                 <button className="bg-gray-600 hover:bg-gray-700 text-gray-50 font-bold py-2 px-4 rounded-full">
@@ -110,7 +101,7 @@ const Index = () => (
           <div className="card card-body text-gray-50  bg-gray-800 font-sans ">
             <div className="row">
               <div className="col-md-12">
-                <h4 className="text-center text-blue-500 mb-3 text-xl">
+                <h4 className="text-center text-black-500 mb-3 text-xl">
                   <strong>PRINCIPALES PROYECTOS</strong>
                 </h4>
               </div>
@@ -123,21 +114,11 @@ const Index = () => (
                     <div className="card-body text-gray-50  bg-gray-800">
                       <h3>{name}</h3>
                       <p>{description}</p>
-                      {/* <a className="text-blue-500" href="#!">
-                        Ver Más
-                      </a> */}
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-            {/* <div className="text-center  mt-4">
-              <Link href="/portfolio">
-                <a className="btn btn-outline-light text-blue-500">
-                  Más Proyectos
-                </a>
-              </Link>
-            </div> */}
             <div className="text-center bg-dark text-light mt-4"></div>
           </div>
         </div>

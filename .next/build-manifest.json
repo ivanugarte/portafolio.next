@@ -19,11 +19,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
-    "/404": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/404.js"
-    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -34,10 +29,25 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/curriculo": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/curriculo.js"
+    ],
     "/experiencia": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/experiencia.js"
+    ],
+    "/habilidades": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/habilidades.js"
+    ],
+    "/proyectos": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/proyectos.js"
     ]
   },
   "ampFirstPages": []

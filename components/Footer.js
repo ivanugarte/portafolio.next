@@ -11,22 +11,22 @@ function Footer() {
           <div className="sm:col-span-12 lg:col-span-3">
             <div className="text-sm text-gray-600">
               <Link href="/curriculo">
-                <a className="text-gray-500 hover:text-gray-700 hover:underline transition duration-150 ease-in-out px-4">
+                <a className="border-transparent text-gray-100 hover:border-gray-300 hover:text-gray-400 font-medium items-center px-2 pt-1">
                   Currículo
                 </a>
               </Link>
               <Link href="/experiencia">
-                <a className="text-gray-500 hover:text-gray-700 hover:underline transition duration-150 ease-in-out">
+                <a className="border-transparent text-gray-100 hover:border-gray-300 hover:text-gray-400 font-medium items-center px-2 pt-1">
                   Experiencia
                 </a>
               </Link>
               <Link href="/habilidades">
-                <a className="text-gray-500 hover:text-gray-700 hover:underline transition duration-150 ease-in-out px-4">
+                <a className="border-transparent text-gray-100 hover:border-gray-300 hover:text-gray-400 font-medium items-center px-2 pt-1">
                   Habilidades
                 </a>
               </Link>
               <Link href="/">
-                <a className="text-gray-500 hover:text-gray-700 hover:underline transition duration-150 ease-in-out">
+                <a className="border-transparent text-gray-100 hover:border-gray-300 hover:text-gray-400 font-medium items-center px-2 pt-1">
                   Proyectos
                 </a>
               </Link>
