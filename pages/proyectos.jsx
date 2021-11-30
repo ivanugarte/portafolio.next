@@ -1,6 +1,5 @@
 import Layout from "../components/Layout";
 import { projects } from "../profile";
-import Link from "next/link";
 
 const Proyectos = () => (
   <div className="bg-gray-900">
@@ -17,8 +16,8 @@ const Proyectos = () => (
               {projects.map(({ name, description }, i) => (
                 <div className="col-md-4 p-2" key={i}>
                   <div className="card">
-                    <div className="card-body text-gray-200  bg-gray-800 w-full">
-                      <h3 className="font-medium text-gray-50">{name}</h3>
+                    <div className="card-body text-gray-200 bg-gray-800 w-full">
+                      <h3 className="font-medium text-gray-50 pb-1.5">{name}</h3> 
                       <p>{description}</p>
                     </div>
                   </div>
@@ -29,7 +28,7 @@ const Proyectos = () => (
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout> 
   </div>
 );
 

@@ -8,129 +8,155 @@ export const skills = [
     percentage: 100,
   },
   {
+    skill: "Javascript",
+    percentage: 70,
+  },
+  {
     skill: "SQL",
     percentage: 100,
+  },
+  {
+    skill: "Css",
+    percentage: 50
   },
   {
     skill: "Vsam",
     percentage: 100,
   },
   {
-    skill: "Javascript",
-    percentage: 80,
-  },
-  {
-    skill: "Css",
-    percentage: 80,
-  },
-  {
     skill: "Html",
-    percentage: 80,
+    percentage: 70,
   },
   {
     skill: "React Js",
-    percentage: 80,
+    percentage: 50,
   },
   {
     skill: "Next Js",
-    percentage: 90,
+    percentage: 60,
   },
 ];
 
 export const projects = [
   {
-    name: "Proyecto bug de Milenio",
+    name: "Coordinación de Sistema de Reembolso",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real",
-    image: "cobol.jpg",
+      "Coordinador de Sistema de Reembolso Batch de la Empresa Sul América Seguros, usando CSP, Cobol, SQL, Vsam"
   },
   {
     name: "Proyecto bug de Milenio",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real",
-    image: "sql.jpg",
+      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
   },
   {
     name: "Proyecto bug de Milenio",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real",
-    image: "cics.jpg",
+      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
   },
   {
     name: "Proyecto bug de Milenio",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real",
-    image: "vsam.jpg",
+      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
   },
   {
     name: "Proyecto bug de Milenio",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real",
-    image: "portfolio5.jpeg",
+      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
   },
   {
     name: "Proyecto bug de Milenio",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real",
-    image: "portfolio6.jpeg",
+      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
   },
 ];
 
 export const experiences = [
   {
     id: 1,
-    company: "Sul America ING ",
-    from: "Marzo de 2019",
+    company: "Cloudata",
+    from: "- Marzo de 2018",
     to: "Noviembre de 2019",
     description:
       "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
   },
   {
     id: 2,
-    company: "Proyecto bug de Milenio",
-    from: "Marzo de 2019",
-    to: "Noviembre de 2019",
+    company: "MJ Aniceto",
+    from: "- Mayo de 2011",
+    to: " Enero de 2017",
     description:
-      "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
+      "Analista Programador Autónomo, trabajando desde Chile. Sistemas ; Riesgo, Rating Cliente. - Ambiente: Main Frame - Acceso remoto por personal communications mediante VPN Programación: Cobol 2 / Batch Base de datos: Db2 / Vsam",
   },
   {
     id: 3,
-    company: "Proyecto bug de Milenio",
-    from: "Marzo de 2019",
-    to: "Noviembre de 2019",
+    company: "BBVA AFP Provida",
+    from: "- Septiembre de 2010",
+    to: "Abril 2011",
     description:
-      "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
+      "Analista Programador BBVA AFP Provida Sistemas ; Tramites, Calculos, Cobranza Ambiente: Main Frame / Mvs / Cics / TSO / Changeman / Control M / Altamira Programación: Cobol 2 / Batch / Cics Base de datos: Db2 / Vsam",
   },
   {
     id: 4,
-    company: "Proyecto bugddd de Milenio",
-    from: "Marzo de 2019",
-    to: "Noviembre de 2019",
+    company: "Citi Bank",
+    from: "- Enero de 2010",
+    to: "Junio 2010 ",
     description:
-      "Test id = 04 -- Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
+      " Analista Programador Citi Bank Sistemas Bancarios Ambiente: Main Frame / Mvs / Cics / TSO / Changeman / Control M / Altamira Programación: Cobol 2 / Cics Base de datos: Db2 / Vsam",
   },
   {
     id: 5,
-    company: "Proyecto bug de Milenio",
-    from: "Marzo de 2019",
-    to: "Noviembre de 2019",
+    company: "Kibernum Informática",
+    from: "- Junio de 2008",
+    to: "Agosto de 2009",
     description:
-      "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
+      " Analista Programador Banco Estado de Chile Sistema Hipotecario / Sistema de Tarjetas (conversión Datacom / DB2), Ambiente: Main Frame / Mvs / Cics / Roscoe Programación: Cobol 2 / Cics Base de datos: Db2 / Vsam / Datacom",
   },
   {
     id: 6,
-    company: "Proyecto bug de Milenio",
-    from: "Marzo de 2019",
-    to: "Noviembre de 2019",
+    company: "WIZ informática",
+    from: "- Enero 2007",
+    to: "Octubre 2007",
     description:
-      "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
+      " Consultor para Banco Abn Amro Real como Analista de Sistemas / Jefe de Fábrica de Software Sistema: Sistemas Bancarios, “Responsable por QA” Ambiente: Main Frame / Mvs / Cics / Roscoe / Tso / Endevor /Control-M Programación: Cobol / Cobol Cics “Command Level “ / PL1 / Natural / Bms-gt Base de datos: Sql / Vsam / Adabas",
   },
   {
     id: 7,
-    company: "Proyecto bug de Milenio",
-    from: "Marzo de 2019",
-    to: "Noviembre de 2019",
+    company: "CTIS informática",
+    from: "- Enero de 2001",
+    to: "Enero de 2007",
     description:
-      "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
+      " Consultor para Banco Abn Amro Real como Analista de Sistemas / Jefe de Fábrica de Software. Sistema: Sistemas Bancarios, “Responsable por QA” Ambiente: Main Frame / Mvs / Cics / Roscoe / Tso / Endevor /Control-M Programación: Cobol / Cobol Cics “Command Level “ / PL1 / Natural / Bms-gt Base de datos: Db2 / Vsam / Adabas",
+  },
+  { 
+    id: 8,
+    company:  "Cinco Tech",
+    from: "– Julio de 1996",
+    to: "Enero de 2001",
+    description:
+      " Consultor para Sul América Aetna Seguros como Analista de Sistemas / Programador, Sistemas: Auditoria, Contabilidad Responsable por el sistema de Siniestro (Reembolso) Coordinación del Proyecto - Siniestro (Reembolso Batch) Ambiente: Main Frame / Mvs / Cics / Roscoe / Qmf / Endevor / Control-M Programación: Cobol 1,2 / Csp / Easytrieve plus  Base de datos: Db2 / Sql / Vsam",
+  },
+  { 
+    id: 9,
+    company:  "Cohriun informática",
+    from: "- Enero de 1995",
+    to: " Julio de 1996",
+    description:
+      "Consultor para Komatsu do Brasil como Programador de computadores, Sistemas: Cuentas por Pagar, Contabilidad, Facturación, Importación/Exportación, Ambiente: Main Frame / Vm / Cics / Cms / Isql,  Programación: Cobol / Cobol Cics “Command level” Easytrieve / CSP Base de datos Sql / Vsam",
+  },
+  { 
+    id: 10,
+    company:  "Komatsu",
+    from: "- Enero de 1991",
+    to: "Diciembre de 1994",
+    description:
+      "Scheduler, Programador de Computadores.",
+  },
+  { 
+    id: 11,
+    company:  "Proconsult ",
+    from: "- Enero de 1989",
+    to: "Diciembre de 1991",
+    description:
+      "Operador de computador / Scheduler.",
   },
 ];

@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
+// import Link from "next/link";
 
 const Index = () => (
   <div className="bg-gray-900">
@@ -26,7 +27,7 @@ const Index = () => (
                   Html , Css, bootstrap, tailwind.
                 </p>
                 <br />
-                <Link href="/#">
+                <Link href="/curriculo">
                   <button className="bg-gray-600 hover:bg-gray-700 text-gray-50 font-bold py-2 px-4 rounded-full">
                     Ver Más
                   </button>

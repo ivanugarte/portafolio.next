@@ -9,6 +9,11 @@ function Footer() {
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
             <div className="text-sm text-gray-600">
+              <Link href="/">
+                <a className="border-transparent text-gray-100 hover:border-gray-300 hover:text-gray-400 font-medium items-center px-2 pt-1">
+                  Home
+                </a>
+              </Link>
               <Link href="/curriculo">
                 <a className="border-transparent text-gray-100 hover:border-gray-300 hover:text-gray-400 font-medium items-center px-2 pt-1">
                   Currículo

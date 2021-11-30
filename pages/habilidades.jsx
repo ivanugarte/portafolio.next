@@ -3,6 +3,9 @@ import Layout from "../components/Layout";
 const Habilidades = () => (
   <div className="bg-gray-900">
     <Layout>
+      <h1 className="text-3xl text-center font-sans text-blue-700 font-bold py-3">
+        Habilidades
+      </h1>
       <div className="px-1">
         <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
           Cobol 2 MainFrame
@@ -48,8 +51,8 @@ const Habilidades = () => (
             <h1 className="text-gray-200 text-center">Senior</h1>
           </div>
         </div>
-         {/* iten 4 */}
-         <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
+        {/* iten 4 */}
+        <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
           Css
         </div>
         <div className="w-full bg-gray-200 rounded-full h-5 mb-3">
@@ -57,17 +60,17 @@ const Habilidades = () => (
             <h1 className="text-gray-200 text-center">Junior</h1>
           </div>
         </div>
-         {/* iten 4 */}
-         <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
-          Db2 Sql Mainframe 
+        {/* iten 4 */}
+        <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
+          Db2 Sql Mainframe
         </div>
         <div className="w-full bg-gray-200 rounded-full h-5 mb-3">
           <div className="bg-blue-600 h-5 rounded-full w-3/4">
             <h1 className="text-gray-200 text-center">Pleno</h1>
           </div>
         </div>
-         {/* iten 4 */}
-         <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
+        {/* iten 4 */}
+        <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
           Css
         </div>
         <div className="w-full bg-gray-200 rounded-full h-5 mb-3">

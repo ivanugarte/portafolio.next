@@ -11,16 +11,18 @@ export default function Experiencia() {
           <div className="col-md-6 text-gray-200 mb-3 ">
             <div className="pt-6 text-center">
               <div className="bg-gray-700 rounded-2xl p-2 w-full ">
-                <h1 className="text-gray-100 font-medium">EXPERIENCIA DETALLADA</h1>
+                <h1 className="text-gray-100 font-medium">
+                  EXPERIENCIA DETALLADA
+                </h1>
                 {experiences
                   .filter((n) => n.id % 2)
-                  .map(({ id, company, from, to, description }, i) => (
+                  .map(({ company, from, to, description }, i) => (
                     <Disclosure as="div" className="mt-2" key={i}>
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-write bg-gray-800 rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                          <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-write bg-gray-800 rounded-lg hover:bg-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                             <span>
-                              {id} {company} {from} hasta {to}
+                              {company} {from} hasta {to}
                             </span>
                             <ChevronUpIcon
                               className={`${
@@ -47,13 +49,13 @@ export default function Experiencia() {
                 </h1>
                 {experiences
                   .filter((n) => !(n.id % 2))
-                  .map(({  id, company, from, to, description  }, i) => (
+                  .map(({ company, from, to, description }, i) => (
                     <Disclosure as="div" className="mt-2" key={i}>
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-write bg-gray-800  rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                          <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-write bg-gray-800  rounded-lg hover:bg-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                             <span>
-                              {id} {company} {from} hasta {to}
+                              {company} {from} hasta {to}
                             </span>
                             <ChevronUpIcon
                               className={`${
