@@ -41,32 +41,32 @@ export const projects = [
   {
     name: "Coordinación de Sistema de Reembolso",
     description:
-      "Coordinador de Sistema de Reembolso Batch de la Empresa Sul América Seguros, usando CSP, Cobol, SQL, Vsam"
+      "Coordinador de Sistema de Reembolso Batch de la Empresa Sul América Seguros, usando CSP, Cobol, Db2/SQL, Vsam (MainFrame)"
+  },
+  {
+    name: "Sistema de Ventas y Pedidos",
+    description:
+      "Diseño y Programación del Sistema de Ventas y Pedidos del Restorán Maestro Alemán, Usando React js, Node js, JavaScript, Sqlite"
+  },
+  {
+    name: "Conversión de Base de datos",
+    description:
+      "Conversión B.D. sistema de Tarjetas Banco Estado, de Datacom a Db2/Sql usando Cobol, Db2/SQL, Datacom (MainFrame)"
   },
   {
     name: "Proyecto bug de Milenio",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
+      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real Brasil"
+  },
+  {
+    name: "Proyecto Portafolio",
+    description:
+      "Diseño y Programación de este Portafolio/Currículo usando Next js, JavaScript, Tailwind"
   },
   {
     name: "Proyecto bug de Milenio",
     description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
-  },
-  {
-    name: "Proyecto bug de Milenio",
-    description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
-  },
-  {
-    name: "Proyecto bug de Milenio",
-    description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
-  },
-  {
-    name: "Proyecto bug de Milenio",
-    description:
-      "Modificación de programas Cobol II, adecuando con (ventanas) el siglo correcto para el Banco real"
+      "Modificación de programas Cobol, adecuando con (ventanas) el siglo correcto para el Banco real (MainFrame)"
   },
 ];
 

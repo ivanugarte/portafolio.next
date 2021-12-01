@@ -24,6 +24,11 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/curriculo": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/curriculo.js"
+    ],
     "/experiencia": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
