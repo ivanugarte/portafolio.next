@@ -1,18 +1,16 @@
 import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
-// import Link from "next/link";
 
 const Index = () => (
   <div className="bg-gray-900">
     <Layout>
- 
-      <header className="row">
+      <header className="row mt-08">
         <div className="col-md-12">
           <div className="card card-body bg-gray-800">
             <div className="row">
               <div className="col-md-4">
-                <img src="foto1.jpg" alt="" className="img-fluid" />
+                <img src="foto2.jpg" alt="" className="img-fluid" />
               </div>
               <div className="col-md-8 font-sans text-gray-50">
                 <h1 className="text-2xl">Iván Andrés Ugarte Mella</h1>
@@ -106,11 +104,10 @@ const Index = () => (
                   <strong>PRINCIPALES PROYECTOS</strong>
                 </h4>
               </div>
-              {projects.map(({ name, description, image }, i) => (
+              {projects.map(({ name, description }, i) => (
                 <div className="col-md-4 p-2" key={i}>
                   <div className="card">
                     <div className="overflow">
-                      {/* <img   src={`/${image}`} alt="" className="card-img-top" /> */}
                     </div>
                     <div className="card-body text-gray-200  bg-gray-800 w-full">
                       <h3 className="font-medium text-gray-50">{name}</h3>

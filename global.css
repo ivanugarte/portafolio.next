@@ -1,7 +1,6 @@
-/* ./styles/globals.css */
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 /* whatsapp */
 #whatsapp {
@@ -45,7 +44,7 @@
   /* ... */
   .progressbarSize {
     padding-left: 5rem;
-    padding-right: 5rem;
+    padding-right: 5rem;  
   }
 }
 
