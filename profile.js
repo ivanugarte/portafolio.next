@@ -64,15 +64,23 @@ export const projects = [
       "Diseño y Programación de este Portafolio/Currículo usando Next js, JavaScript, Tailwind"
   },
   {
-    name: "Proyecto bug de Milenio",
+    name: "Proyecto Demandas del Banco Real",
     description:
-      "Modificación de programas Cobol, adecuando con (ventanas) el siglo correcto para el Banco real (MainFrame)"
+      "Jefe de Fabrica de Sofware junto al Banco Real, responsable de especificaciones técnicas pasadas a la Fabrica de Software"
   },
 ];
 
 export const experiences = [
   {
     id: 1,
+    company: "FreeLancer",
+    from: "- Diciembre de 2019",
+    to: "Actual",
+    description:
+      "Programador en Páginas web, Front y Back End usando JavaScript, Next, Node, Html, Css, Tailwind, Bootstrap.",
+  },
+  {
+    id: 2,
     company: "Cloudata",
     from: "- Marzo de 2018",
     to: "Noviembre de 2019",
@@ -80,7 +88,7 @@ export const experiences = [
       "Analista Programador en Cloudata Concepción Sistemas: sistema ERP sistemas de administración a medida para empresa Ambiente: Plataforma baja (windows, Visual Cobol – Micro Focus)  Programación: Visual Cobol Base de datos: en SQL",
   },
   {
-    id: 2,
+    id: 3,
     company: "MJ Aniceto",
     from: "- Mayo de 2011",
     to: " Enero de 2017",
@@ -88,7 +96,7 @@ export const experiences = [
       "Analista Programador Autónomo, trabajando desde Chile. Sistemas ; Riesgo, Rating Cliente. - Ambiente: Main Frame - Acceso remoto por personal communications mediante VPN Programación: Cobol 2 / Batch Base de datos: Db2 / Vsam",
   },
   {
-    id: 3,
+    id: 4,
     company: "BBVA AFP Provida",
     from: "- Septiembre de 2010",
     to: "Abril 2011",
@@ -96,7 +104,7 @@ export const experiences = [
       "Analista Programador BBVA AFP Provida Sistemas ; Tramites, Calculos, Cobranza Ambiente: Main Frame / Mvs / Cics / TSO / Changeman / Control M / Altamira Programación: Cobol 2 / Batch / Cics Base de datos: Db2 / Vsam",
   },
   {
-    id: 4,
+    id: 5,
     company: "Citi Bank",
     from: "- Enero de 2010",
     to: "Junio 2010 ",
@@ -104,7 +112,7 @@ export const experiences = [
       " Analista Programador Citi Bank Sistemas Bancarios Ambiente: Main Frame / Mvs / Cics / TSO / Changeman / Control M / Altamira Programación: Cobol 2 / Cics Base de datos: Db2 / Vsam",
   },
   {
-    id: 5,
+    id: 6,
     company: "Kibernum Informática",
     from: "- Junio de 2008",
     to: "Agosto de 2009",
@@ -112,7 +120,7 @@ export const experiences = [
       " Analista Programador Banco Estado de Chile Sistema Hipotecario / Sistema de Tarjetas (conversión Datacom / DB2), Ambiente: Main Frame / Mvs / Cics / Roscoe Programación: Cobol 2 / Cics Base de datos: Db2 / Vsam / Datacom",
   },
   {
-    id: 6,
+    id: 7,
     company: "WIZ informática",
     from: "- Enero 2007",
     to: "Octubre 2007",
@@ -120,7 +128,7 @@ export const experiences = [
       " Consultor para Banco Abn Amro Real como Analista de Sistemas / Jefe de Fábrica de Software Sistema: Sistemas Bancarios, “Responsable por QA” Ambiente: Main Frame / Mvs / Cics / Roscoe / Tso / Endevor /Control-M Programación: Cobol / Cobol Cics “Command Level “ / PL1 / Natural / Bms-gt Base de datos: Sql / Vsam / Adabas",
   },
   {
-    id: 7,
+    id: 8,
     company: "CTIS informática",
     from: "- Enero de 2001",
     to: "Enero de 2007",
@@ -128,7 +136,7 @@ export const experiences = [
       " Consultor para Banco Abn Amro Real como Analista de Sistemas / Jefe de Fábrica de Software. Sistema: Sistemas Bancarios, “Responsable por QA” Ambiente: Main Frame / Mvs / Cics / Roscoe / Tso / Endevor /Control-M Programación: Cobol / Cobol Cics “Command Level “ / PL1 / Natural / Bms-gt Base de datos: Db2 / Vsam / Adabas",
   },
   { 
-    id: 8,
+    id: 9,
     company:  "Cinco Tech",
     from: "– Julio de 1996",
     to: "Enero de 2001",
@@ -136,7 +144,7 @@ export const experiences = [
       " Consultor para Sul América Aetna Seguros como Analista de Sistemas / Programador, Sistemas: Auditoria, Contabilidad Responsable por el sistema de Siniestro (Reembolso) Coordinación del Proyecto - Siniestro (Reembolso Batch) Ambiente: Main Frame / Mvs / Cics / Roscoe / Qmf / Endevor / Control-M Programación: Cobol 1,2 / Csp / Easytrieve plus  Base de datos: Db2 / Sql / Vsam",
   },
   { 
-    id: 9,
+    id: 10,
     company:  "Cohriun informática",
     from: "- Enero de 1995",
     to: " Julio de 1996",
@@ -144,7 +152,7 @@ export const experiences = [
       "Consultor para Komatsu do Brasil como Programador de computadores, Sistemas: Cuentas por Pagar, Contabilidad, Facturación, Importación/Exportación, Ambiente: Main Frame / Vm / Cics / Cms / Isql,  Programación: Cobol / Cobol Cics “Command level” Easytrieve / CSP Base de datos Sql / Vsam",
   },
   { 
-    id: 10,
+    id: 11,
     company:  "Komatsu",
     from: "- Enero de 1991",
     to: "Diciembre de 1994",
@@ -152,7 +160,7 @@ export const experiences = [
       "Scheduler, Programador de Computadores.",
   },
   { 
-    id: 11,
+    id: 12,
     company:  "Proconsult ",
     from: "- Enero de 1989",
     to: "Diciembre de 1991",

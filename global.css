@@ -52,7 +52,7 @@
 @media (min-width: 1280px) {
   /* ... */
   .progressbarSize {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    margin-right: 120px;
+    margin-left: 120px;
     }
 }

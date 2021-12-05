@@ -15,7 +15,8 @@ export default function Experiencia() {
                   EXPERIENCIA DETALLADA
                 </h1>
                 {experiences
-                  .filter((n) => n.id % 2)
+                  // .filter((n) => n.id % 2)
+                  .filter((n) => n.id < 7)
                   .map(({ company, from, to, description }, i) => (
                     <Disclosure as="div" className="mt-2" key={i}>
                       {({ open }) => (
@@ -25,9 +26,8 @@ export default function Experiencia() {
                               {company} {from} hasta {to}
                             </span>
                             <ChevronUpIcon
-                              className={`${
-                                open ? "transform rotate-180" : ""
-                              } w-5 h-5 text-purple-500`}
+                              className={`${open ? "transform rotate-180" : ""
+                                } w-5 h-5 text-purple-500`}
                             />
                           </Disclosure.Button>
                           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-100 w-full">
@@ -48,7 +48,8 @@ export default function Experiencia() {
                   EXPERIENCIA DETALLADA
                 </h1>
                 {experiences
-                  .filter((n) => !(n.id % 2))
+                  // .filter((n) => !(n.id % 2))
+                  .filter((n) => n.id > 6)
                   .map(({ company, from, to, description }, i) => (
                     <Disclosure as="div" className="mt-2" key={i}>
                       {({ open }) => (
@@ -58,9 +59,8 @@ export default function Experiencia() {
                               {company} {from} hasta {to}
                             </span>
                             <ChevronUpIcon
-                              className={`${
-                                open ? "transform rotate-180" : ""
-                              } w-5 h-5 text-purple-500`}
+                              className={`${open ? "transform rotate-180" : ""
+                                } w-5 h-5 text-purple-500`}
                             />
                           </Disclosure.Button>
                           <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-100 w-full">

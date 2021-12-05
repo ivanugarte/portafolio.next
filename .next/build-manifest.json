@@ -29,10 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/habilidades": [
+    "/proyectos": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/habilidades.js"
+      "static/chunks/pages/proyectos.js"
     ]
   },
   "ampFirstPages": []
