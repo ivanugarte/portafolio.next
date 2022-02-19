@@ -4,7 +4,7 @@ import { projects } from "../profile";
 const Proyectos = () => (
   <div className="bg-gray-900">
     <Layout>
-      <div className="row ">
+      <div className="row">
         <div className="col-md-12 flex">
           <div className="card card-body text-gray-50  bg-gray-800 font-sans ">
             <div className="row">
