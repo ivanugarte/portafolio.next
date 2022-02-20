@@ -1,7 +1,6 @@
 // import Navbar from "./Navbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Sliders from "./Sliders";
 
 const Layout = ({ children }) => (
   <>
@@ -16,7 +15,6 @@ const Layout = ({ children }) => (
       </div>
     </div>
     <Navbar />
-    {/* <Sliders /> */}
     <main className="container py-4">{children}</main>
     <Footer />
   </>
