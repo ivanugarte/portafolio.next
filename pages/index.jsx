@@ -1,8 +1,6 @@
 import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
-import Image from "next/image";
-
 
 const Index = () => (
   <div className="bg-gray-900">
@@ -12,14 +10,7 @@ const Index = () => (
           <div className="card card-body bg-gray-800">
             <div className="row">
               <div className="col-md-4">
-                {/* <img src="foto2.jpg" alt="" className="img-fluid" /> */}
-                <Image
-                  className="object-cover shadow-lg rounded-lg"
-                  src='/ivanfotoperfilcolor.webp'
-                  layout="fill"
-                  priority
-                  alt=""
-                />
+                <img src="ivanfotoperfilcolor.webp" alt="" className="img-fluid" />
               </div>
               <div className="col-md-8 font-sans text-gray-50">
                 <h1 className="text-2xl">Iván Andrés Ugarte Mella</h1>
@@ -62,8 +53,8 @@ const Index = () => (
                   </strong>
                   <div className="progress">
                     <div
-                      className="progress-bar"
-                      role="progressbar"
+                        className="progress-bar"
+                        role="progressbar"
                       style={{ width: `${percentage}%` }}
                     ></div>
                   </div>
@@ -79,20 +70,20 @@ const Index = () => (
               <br />
               <ul>
                 {experiences
-                  .filter((n) => n.id < 5)
-                  .map(
-                    ({ id, company, from, to, description }, i) => (
-                      <div key={i}>
-                        <li>
-                          <h1 className="text-gray-100">
-                            {id} {company} {from} hasta {to}
-                          </h1>
-                          <p className="text-gray-300">{description}</p>
-                          <br />
-                        </li>
-                      </div>
-                    )
-                  )}
+                .filter((n) => n.id < 5)
+                .map(
+                  ({ id, company, from, to, description }, i) => (
+                    <div key={i}>
+                      <li>
+                        <h1 className="text-gray-100">
+                          {id} {company} {from} hasta {to}
+                        </h1>
+                        <p className="text-gray-300">{description}</p>
+                        <br />
+                      </li>
+                    </div>
+                  )
+                )}
               </ul>
               <Link href="/experiencia">
                 <button className="bg-gray-600 hover:bg-gray-700 text-gray-50 font-bold py-2 px-4 rounded-full">
