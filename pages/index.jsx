@@ -1,6 +1,8 @@
 import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
+import Image from "next/image";
+
 
 const Index = () => (
   <div className="bg-gray-900">
@@ -10,7 +12,14 @@ const Index = () => (
           <div className="card card-body bg-gray-800">
             <div className="row">
               <div className="col-md-4">
-                <img src="foto2.jpg" alt="" className="img-fluid" />
+                {/* <img src="foto2.jpg" alt="" className="img-fluid" /> */}
+                <Image
+                        className="object-cover shadow-lg rounded-lg"
+                        src='/ivanfotoperfilcolor.webp'
+                        layout="fill"
+                        priority
+                        alt=""
+                      />
               </div>
               <div className="col-md-8 font-sans text-gray-50">
                 <h1 className="text-2xl">Iván Andrés Ugarte Mella</h1>
