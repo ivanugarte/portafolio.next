@@ -35,7 +35,7 @@ function Footer() {
                 </a>
               </Link>
               <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0 py-4 ">
-                Página Hecha por Iván Andrés Ugarte Mella
+                Página Hecha por Iván Ugarte Mella
               </ul>
             </div>
           </div>
