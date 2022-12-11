@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import { skills, experiences, projects } from "../profile";
 import Link from "next/link";
+import Image from "next/image"
 
 const Index = () => (
   <div className="bg-gray-900">
@@ -10,7 +11,7 @@ const Index = () => (
           <div className="card card-body bg-gray-800">
             <div className="row">
               <div className="col-md-4">
-                <img src="ivanfotoperfilcolor.webp" alt="" className="img-fluid" />
+                <Image src={"/ivanfotoperfilcolor.webp"} width={200} height={200} alt="" className="img-fluid" />
               </div>
               <div className="col-md-8 font-sans text-gray-50">
                 <h1 className="text-2xl">Iván Andrés Ugarte Mella</h1>
@@ -21,8 +22,8 @@ const Index = () => (
                 <p>
                   Titulado en Procesamiento de Datos, experiencia de 15 años en
                   MainFrame con Herramientas Cobol, Cics, db2, Vsam. Experiencia
-                  de 2 años en Programador en Javascript (React, Next, Node)
-                  Html , Css, bootstrap, tailwind.
+                  de 3 años en Programando en Javascript (React, Next, Node)
+                  Html , Css, bootstrap, tailwind, Mysql, Prisma (Páginas web, sistemas)
                 </p>
                 <br />
                 <Link href="/curriculo">
