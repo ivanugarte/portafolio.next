@@ -61,7 +61,7 @@ export const projects = [
   {
     name: "Proyecto Portafolio",
     description:
-      "Diseño y Programación de este Portafolio/Currículo usando Next js, JavaScript, Tailwind"
+      "Diseño y Programación de este Portafolio/Currículo usando Next js, JavaScript, Tailwind                                          "
   },
   {
     name: "Proyecto Demandas del Banco Real",

@@ -1,79 +1,71 @@
-import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from "react";
+import Link from "next/link";
 
-export default function Navbar() {
-// export const Navbar2 = () => {
-  const [active, setActive] = useState(false);
-
-  const handleClick = () => {
-    setActive(!active);
-  };
-
+const SideBar = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <>
-      <nav className='flex items-center flex-wrap bg-gray-800 p-3 '>
-        <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 '>
-            
-            <span className='text-xl text-white font-bold uppercase tracking-wide'>
-              Portafolio
-            </span>
-          </a>
-        </Link>
-        <button
-          className=' inline-flex p-3 hover:bg-gray-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
-          onClick={handleClick}
+    <div className="py-3 fixed top-0 left-0 right-0 shadow-md z-10">
+      <button className="ml-4" onClick={() => setOpen(true)}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6"
         >
-          <svg
-            className='w-6 h-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+
+      <div
+        className={`${
+          !open && "hidden"
+        } bg-gray-600/50 min-h-screen w-full fixed top-0 left-0 right-0 backdrop-blur-sm`}
+        onClick={() => setOpen(false)}
+      ></div>
+
+      <div
+        className={`${
+          open ? "w-80" : "w-0"
+        } bg-cyan-600 min-h-screen fixed top-0 left-0 transition-all duration-300`}
+      >
+        <div className={`${!open && "hidden"} pt-3`}>
+          <button
+            className="ml-4 text-white mb-14"
+            onClick={() => setOpen(false)}
           >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M4 6h16M4 12h16M4 18h16'
-            />
-          </svg>
-        </button>
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-        <div
-          className={`${
-            active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
-        >
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white '>
-                Home
-              </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <div className="bg-gray-800">
+            <Link
+              href="/proyectos"
+              className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2"
+            >
+              Proyectos
             </Link>
-            <Link href='/curriculo'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
-                Currículo
-              </a>
-            </Link>
-            <Link href='/experiencia'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
-                Experiencia 
-              </a>
-            </Link>
-            <Link href='/habilidades'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
-                Habilidades
-              </a>
-            </Link>
-            <Link href='/proyectos'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white'>
-                Proyectos
-              </a>
-            </Link>
+            </div>
           </div>
-        </div>
-      </nav>
-    </>
+      </div>
+    </div>
   );
 };
+
+export default SideBar;

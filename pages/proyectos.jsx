@@ -10,7 +10,7 @@ const Proyectos = () => (
             <div className="row">
               <div className="col-md-12">
                 <h4 className="text-center text-black-500 mb-3 text-xl">
-                  <strong>PROYECTOS INFORMATICOS</strong>
+                  <strong>PROYECTOS INFORMÁTICOS</strong>
                 </h4>
               </div>
               {projects.map(({ name, description }, i) => (
