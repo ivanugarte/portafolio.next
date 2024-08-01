@@ -1,13 +1,13 @@
 {
   "/_app": "pages/_app.js",
-  "/404": "pages/404.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
-  "/form": "pages/form.js",
+  "/404": "pages/404.js",
   "/experiencia": "pages/experiencia.js",
   "/curriculo": "pages/curriculo.js",
+  "/_error": "pages/_error.js",
+  "/": "pages/index.js",
+  "/form": "pages/form.js",
   "/habilidades": "pages/habilidades.js",
   "/portafolio": "pages/portafolio.js",
-  "/": "pages/index.js",
   "/proyectos": "pages/proyectos.js"
 }
