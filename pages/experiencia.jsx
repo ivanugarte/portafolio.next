@@ -6,6 +6,7 @@ import { experiences } from "../profile";
 export default function Experiencia() {
   return (
     <div className="bg-gray-900">
+      
       <Layout>
         <div className="row">
           <div className="col-md-6 text-gray-200 mb-3 ">
