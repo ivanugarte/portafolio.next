@@ -17,7 +17,7 @@ const Portafolio = () => (
               <div className="col-md-8 font-sans text-gray-50">
                 <h1 className="text-2xl">Iván Andrés Ugarte Mella</h1>
                 <h1 className="font-medium ">
-                  Analista de Sistemas - Programador
+                  Analista de Sistadasdemas - Programador
                 </h1>
                 <br />
                 <p>

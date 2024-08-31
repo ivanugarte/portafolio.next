@@ -1,13 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
-  "/form": "pages/form.js",
-  "/": "pages/index.js",
-  "/habilidades": "pages/habilidades.js",
-  "/portafolio": "pages/portafolio.js",
-  "/404": "pages/404.js",
-  "/proyectos": "pages/proyectos.js",
-  "/experiencia": "pages/experiencia.js",
-  "/curriculo": "pages/curriculo.js"
-}
+{"/_app":"pages/_app.js","/404":"pages/404.html","/_document":"pages/_document.js","/_error":"pages/_error.js","/curriculo":"pages/curriculo.html","/experiencia":"pages/experiencia.html","/habilidades":"pages/habilidades.html","/":"pages/index.html","/portafolio":"pages/portafolio.html","/proyectos":"pages/proyectos.html"}

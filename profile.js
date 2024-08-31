@@ -9,7 +9,7 @@ export const skills = [
   },
   {
     skill: "Javascript",
-    percentage: 70,
+    percentage: 80,
   },
   {
     skill: "Sql/Mysql",
@@ -17,22 +17,26 @@ export const skills = [
   },
   {
     skill: "Css",
-    percentage: 50
+    percentage: 80
   },
   {
     skill: "Node Js",
-    percentage: 70,
+    percentage: 80,
   },
   {
     skill: "Html",
-    percentage: 70,
+    percentage: 100,
   },
   {
     skill: "React Js",
-    percentage: 70,
+    percentage: 80,
   },
   {
     skill: "Next Js",
+    percentage: 80,
+  },
+  {
+    skill: "PHP",
     percentage: 70,
   },
 ];
@@ -77,7 +81,7 @@ export const experiences = [
     from: "- Enero de 2020",
     to: "Actual",
     description:
-      "Programador Web Full-Stack usando JavaScript, Typescript, Next, Node, MySql, Html, Css, Tailwind, Bootstrap.",
+      "Programador Web Full-Stack usando php, JavaScript, Typescript, Next, Node, MySql, Html, Css, Tailwind, Bootstrap.",
   },
   {
     id: 2,

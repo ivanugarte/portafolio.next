@@ -4,7 +4,7 @@ const Habilidades = () => (
   <div className="bg-gray-900">
     <Layout>
       <div className="progressbarSize">
-        <h1 className="text-3xl text-center font-sans text-blue-700 font-bold py-3">
+        <h1 className="text-3xl text-center  text-blue-700 font-serif py-3">
           Habilidades
         </h1>
         <div className="px-1">
@@ -82,6 +82,15 @@ const Habilidades = () => (
           {/* iten 9 */}
           <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
             Tailwind / Bootstrap
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-5 mb-3">
+            <div className="bg-yellow-600 h-5 rounded-full w-2/4">
+              <h1 className="text-gray-200 text-center">Junior</h1>
+            </div>
+          </div>
+          {/* iten */}
+          <div className=" text-base font-medium mb-1 text-gray-100 font-sans">
+            PHP
           </div>
           <div className="w-full bg-gray-200 rounded-full h-5 mb-3">
             <div className="bg-yellow-600 h-5 rounded-full w-2/4">
