@@ -16,7 +16,7 @@ export default function Experiencia() {
                   EXPERIENCIA DETALLADA
                 </h1>
                 {experiences
-                  // .filter((n) => n.id % 2)
+                  //TODO: .filter((n) => n.id % 2)
                   .filter((n) => n.id < 7)
                   .map(({ company, from, to, description }, i) => (
                     <Disclosure as="div" className="mt-2" key={i}>

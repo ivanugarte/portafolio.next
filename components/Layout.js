@@ -11,7 +11,7 @@ const Layout = ({ children }) => (
           href="https://api.whatsapp.com/send?phone=56936682021"
           target="_blank"
         >
-          <img src="btn_whatsapp.png" alt="..." width="70px" height="70px" />
+          <img src="whatsappBlue.png" alt="..." width="70px" height="70px" />
         </Link>
       </div>
     </div>
